@@ -1,0 +1,29 @@
+@import "colors";
+
+.home-page {
+	padding-top:100px;
+
+
+	.hero-cta {
+		position: absolute;
+		z-index:7;
+		bottom: -23px;
+		left:0;
+		right:0;
+		margin:0 auto;
+		width:160px;
+	}
+
+	.mission-hero-section {
+		
+		h1 {
+			
+			span {
+				overflow:hidden;
+				display:block;	
+				padding:30px 0;
+			}
+		}
+	}
+	
+}

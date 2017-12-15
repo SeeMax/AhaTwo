@@ -1,0 +1,129 @@
+@import "colors";
+
+.mission-section {
+
+	.content {
+		justify-content: space-between;
+		padding-bottom: 0px;
+	}
+}
+		
+.mission-icons {
+
+}
+
+.single-mission-icon {
+	background: white;
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items:center;
+	margin-bottom:30px;
+	
+	.mission-icon-image {
+		position: relative;
+		width:36px;
+		height:36px;
+		border-radius: 50%;
+		border:1px solid $red;
+
+		img {
+			position: relative;
+			top:0px;
+			width:22px;
+			height:auto;
+		}
+	}
+
+	hr {
+		position: absolute;
+		top:100%;
+		left:17px;
+		height:31px;
+		width:1px;
+		margin:0;
+		border:none;
+		background:$red;
+	}
+
+	.mission-icon-label {
+		font-family: 'leroy';
+		font-size:16px;
+		color:red;
+		margin-left:12px;
+	}
+
+
+	&:nth-last-of-type(1) {
+
+		hr {
+			height:0px;
+			width:0px;
+			background: white;
+		}
+	}
+}
+
+.mission-intro {
+	position: relative;
+	background:white;
+	padding:64px 60px 0px 60px;
+	transform:translateY(-90px);
+
+	hr {
+		position: absolute;
+		top:0;
+		left:-30px;
+		border:none;
+		width:1px;
+		height:100%;
+		margin:0;
+		background:$red;
+	}
+
+	h2 {
+		margin-bottom:28px;
+	}
+
+	.mission-intro-copy {
+		position: relative;
+	} 
+}
+					
+.mission-cta {
+
+	a {
+
+	}
+}
+
+
+// 1023px And Below
+@media screen and (max-width: 1023px){
+
+}
+
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+	.mission-section {
+
+		.content {
+			padding-bottom:60px;
+		}
+	}
+
+	.mission-intro {
+		order:1;
+		padding:40px 30px 0px 30px
+	}
+
+	.mission-icons {
+		order:1;
+	}
+
+	.mission-icons {
+		order:2;
+	}
+}

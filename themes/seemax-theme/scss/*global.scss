@@ -1,0 +1,183 @@
+@import "colors";
+
+html, body {
+	height:100%;
+	width:100%;
+}
+
+body {
+	font:400 15px/1.5 'Open Sans', sans-serif;
+	color:black;
+	position: relative;
+}
+
+.wrapper {
+	width:100%;
+	min-height: 100%;
+	margin:0 auto;
+	overflow: hidden;
+}
+
+main {
+	position: relative;
+	min-height: 100%;
+	width:100%;
+}
+
+section {
+	position: relative;
+	width:100%;
+	height:auto;
+	background:white;
+}
+
+.background-image-section {
+	background: no-repeat center center;
+  background-size: cover;
+}	
+
+.content {
+	position: relative;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items: center;
+	width:100%;
+	height:auto;
+	max-width: 1100px;
+	margin:0px auto;
+	padding:50px 25px 70px 25px;
+}
+
+a {
+	color:$red;
+	text-decoration:none;
+}
+
+h1, h2, h3, h4 {
+	font:77px/1 'leroy', sans-serif;
+	margin:0;
+	width:100%;
+}
+
+h1 {
+	
+}
+
+h2 {
+	font-size:40px;
+}
+
+h3 {
+	font-size:30px
+}
+
+h4 {
+	font-size:22px
+}
+
+p {
+	margin:0;
+	width:100%;
+}
+
+ul {
+
+	li {
+		position: relative;
+	}
+}
+
+.button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'leroy';
+	letter-spacing: 1px;
+	font-size: 16px;
+	text-transform: uppercase;
+	height:46px;
+	width:auto;
+	background: $blue;
+	color: white;
+	transition: all .3s ease-in;
+
+	&:hover {
+		background:$darkBlue;
+	}
+}
+
+
+.hero-section {
+	height:500px;
+	width:100%;
+
+	.content {
+		text-align: center;
+		height:100%;
+		color:white;
+		align-content: center;
+
+		hr {
+			margin-bottom:30px;
+			width:160px;
+			height:8px;
+			border:none;
+			border-radius: 20px;
+			background: $blue;
+			opacity: .5;
+
+			&:nth-of-type(2) {
+				margin-top:40px
+			}
+		}
+
+		h1, h2 {
+			font-size:77px;
+		}
+	}
+}
+
+
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+
+	h1 {
+		font-size: 60px;
+	}
+
+	.hero-section {
+		height:400px;
+		width:100%;
+
+		.content {
+
+			h1, h2 {
+				font-size:60px;
+			}
+		}
+	}
+}
+
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+	h1 {
+		font-size: 50px;
+	}
+
+	.hero-section {
+		height:440px;
+		width:100%;
+
+		.content {
+
+			h1, h2 {
+				font-size:50px;
+			}
+		}
+	}
+
+}

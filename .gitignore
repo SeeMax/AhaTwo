@@ -1,0 +1,11 @@
+# Ignore all files named .DS_Store or ending with .log
+**/.DS_Store
+**.log
+wp-config.php
+ai1wm-backups
+plugins
+uploads
+themes/seemax-theme/node_modules
+themes/seemax-theme/package-lock.json
+themes/seemax-theme/package.json
+themes/seemax-theme/gulpfile.js

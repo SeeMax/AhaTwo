@@ -1,0 +1,234 @@
+@import "colors";
+
+.talent-hero-section .content {
+	hr {
+		background:$green;
+	}
+}
+
+.talent-section {
+
+	.content {
+		padding-top:100px;
+	}
+}
+		
+.talent-intro {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	h2 {
+		padding-right:15px; 
+	}
+
+	hr {
+		position: absolute;
+		top:0;
+		left:0px;
+		height:100%;
+		width:1px;
+		margin:0;
+		border:none;
+		background:$green;
+	}
+
+	.talent-body-copy {
+		position: relative;
+		padding-left:15px; 
+
+		span {
+			display: block;
+			width:100%;
+			height:auto;
+		}
+	}
+}
+
+.employee-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+	padding-top:55px;
+}
+
+.single-employee-container {
+	
+
+	h3 {
+		margin:10px 0 8px 0;
+	}
+
+	h4 {
+		color:$green;
+		margin-bottom:16px;
+	}	
+}
+
+.employee-name {
+
+}
+
+.employee-image-container  {
+	position: relative;
+	width:168px;
+	height:168px;
+	border-radius: 50%;
+	border:1px solid $green;
+}
+
+.employee-image  {
+	position: absolute;
+	left:8px;
+	top:8px;
+	width:150px;
+	height:150px;
+	border-radius: 50%;	
+}
+
+.background-image  {
+
+}
+
+.employee-title {
+
+}
+
+.employee-bio {
+
+}
+
+.advisors-section {
+
+	.content {
+		justify-content: space-between;
+		padding-top:80px;
+		padding-bottom:200px;
+	}
+
+	.advisor-section-title {
+		position: relative;
+		top:-10px;
+	}
+
+	h2 {
+		
+	}
+
+	.background-circle {
+		max-width:none;
+		width:445px;
+		height:445px;
+		left:-100px;
+		top:-182px;
+		position: absolute;
+		opacity:.1;
+	}
+
+	.advisors-list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.single-advisor {
+		width:50%;
+		height:auto;
+		display: flex;
+		flex-wrap: wrap;
+		padding-left:30px;
+		margin-bottom:34px;
+	}
+
+	.advisor-image-container  {
+		position: relative;
+		width:100px;
+		height:100px;
+		border-radius: 50%;
+		border:1px solid $green;
+	}
+
+	.advisor-image  {
+		position: absolute;
+		left:5px;
+		top:5px;
+		width:88px;
+		height:88px;
+		border-radius: 50%;	
+	}
+
+	.advisor-words {
+		width:100%;
+		height:auto;
+		margin-left:18px;
+		flex:1;
+		display: flex;
+		flex-wrap:wrap;
+		align-content: center;
+	}
+	
+	.advisor-title {
+		margin-top:5px;
+		color:$green;
+	}
+}
+
+
+// 1023px And Below
+@media screen and (max-width: 1023px){
+
+	.advisors-section .advisor-words {
+
+		h4 {
+			font-size:16px;
+		}
+	}
+}
+
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+	.talent-section {
+
+		.content	{
+			padding-top:70px;
+			padding-bottom:0px;
+		}
+	}
+	
+
+	.talent-intro {
+		padding-bottom: 30px;
+
+		h2 {
+			margin-bottom:15px;
+			padding-left:15px;
+		}
+	}
+
+	.single-employee-container {
+		margin-bottom:80px;
+	}
+
+	.advisors-section {
+
+		.content {
+			padding-bottom:80px;
+		}
+
+		.background-circle {
+			top:-100px;
+			left:-150px;
+		}
+
+		.advisors-list {
+			margin-top:15px;
+		}
+
+		.single-advisor {
+			width:100%;
+			padding-left:0;
+  	}
+	}
+}
