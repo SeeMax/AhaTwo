@@ -818,7 +818,7 @@ li.active-menu {
   .single-mission-icon .mission-icon-label {
     font-family: 'leroy';
     font-size: 16px;
-    color: red;
+    color: #E42129;
     margin-left: 12px; }
   .single-mission-icon:nth-last-of-type(1) hr {
     height: 0px;

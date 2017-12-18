@@ -237,7 +237,7 @@ function theme_header_scripts() {
     wp_enqueue_script('SmoothScroll');
 
     // ENQUEUE COMPILED SCRIPTS
-    wp_register_script('themescripts', get_template_directory_uri() . '/scripts.js', array('jquery'), '1.0.0');
+    wp_register_script('themescripts', get_template_directory_uri() . '/scripts.js', array('jquery'), time());
     wp_enqueue_script('themescripts');
   }
 }

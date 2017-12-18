@@ -267,40 +267,43 @@ $(window).on('load', function() {
 
 		var controller = new ScrollMagic.Controller();	
 
-		var approachHeroScene = new ScrollMagic.Scene({
-			triggerElement: ".approach-hero-section",
-			offset:100,
-			reverse: false
-		}).setTween(approachHeroTL);
-
-		var talentHeroScene = new ScrollMagic.Scene({
-			triggerElement: ".talent-hero-section",
-			offset:100,
-			reverse: false
-		}).setTween(talentHeroTL);
-
 		var missionScene = new ScrollMagic.Scene({
 			triggerElement: ".mission-section",
+			offset:-150,
 			reverse: false
 		}).setTween([missionIconTL, missionIntroTL]);
 
+		var approachHeroScene = new ScrollMagic.Scene({
+			triggerElement: ".approach-hero-section",
+			reverse: false
+		}).setTween(approachHeroTL);
+
 		var appraochScene = new ScrollMagic.Scene({
 			triggerElement: ".approach-section",
+			offset:-100,
 			reverse: false
 		}).setTween(approachTL);
 
+		var talentHeroScene = new ScrollMagic.Scene({
+			triggerElement: ".talent-hero-section",
+			reverse: false
+		}).setTween(talentHeroTL);
+
 		var talentScene = new ScrollMagic.Scene({
 			triggerElement: ".talent-section",
+			offset:-100,
 			reverse: false
 		}).setTween(talentTL);
 
 		var employeeScene = new ScrollMagic.Scene({
 			triggerElement: ".employee-section",
+			offset:-100,
 			reverse: false
 		}).setTween(employeeTL);
 
 		var advisorScene = new ScrollMagic.Scene({
 			triggerElement: ".advisors-section",
+			offset:-100,
 			reverse: false
 		}).setTween(advisorTL);
 

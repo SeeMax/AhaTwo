@@ -36,19 +36,19 @@
 				</li>
 				<?php if( get_field('twitter_link', 'options') ): ?>
 					<li class="footer-social-icon">
-						<a class="c-block-fill" href="<?php the_field('twitter_link', 'options');?>"></a>
+						<a class="c-block-fill" href="<?php the_field('twitter_link', 'options');?>" target="_blank"></a>
 						<img src="<?php echo get_template_directory_uri(); ?>/img/social-icons/twitter-icon.png" >
 					</li>
 				<?php endif; ?>
 				<?php if( get_field('medium_link', 'options') ): ?>
 					<li class="footer-social-icon">
-					<a class="c-block-fill" href="<?php the_field('medium_link', 'options');?>"></a>
+					<a class="c-block-fill" href="<?php the_field('medium_link', 'options');?>" target="_blank"></a>
 					<img src="<?php echo get_template_directory_uri(); ?>/img/social-icons/medium-icon.png" >
 					</li>
 				<?php endif; ?>
 				<?php if( get_field('linkedin_link', 'options') ): ?>
 					<li class="footer-social-icon">
-					<a class="c-block-fill" href="<?php the_field('linkedin_link', 'options');?>"></a>
+					<a class="c-block-fill" href="<?php the_field('linkedin_link', 'options');?>" target="_blank"></a>
 					<img src="<?php echo get_template_directory_uri(); ?>/img/social-icons/linkedin-icon.png" >
 					</li>
 				<?php endif; ?>
