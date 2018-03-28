@@ -25,7 +25,7 @@
 		<div class="content header-inner-wrap">
 			<div class="header-logo">
 				<a class="c-block-fill" href="/"></a>
-					<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" >
+				<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" >
 			</div>
 			<div class="all-navs-wrapper">
 				<nav class="main-nav mainNav" role="navigation">

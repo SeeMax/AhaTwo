@@ -518,7 +518,7 @@ add_action('login_head', 'custom_login_logo');
 
 function remove_footer_admin()
 {
-    echo '<span id="footer-thankyou"> Made with love by <a target="_blank" href="#">COMPANY</a> </span>';
+    
 }
 add_filter('admin_footer_text', 'remove_footer_admin');
 
@@ -533,40 +533,6 @@ add_filter('admin_footer_text', 'remove_footer_admin');
 // add_action('wp_head', 'FGU_favicon');
 // add_action('admin_head', 'FGU_favicon');
 
-
-
-/* CLIENT CUSTOM DASHBOARD WIDGET */
-
-add_action('wp_dashboard_setup', 'hints_tips_widget');
-
-function hints_tips_widget()
-{
-    global $wp_meta_boxes;
-
-    wp_add_dashboard_widget('custom_help_widget', 'WordPress Documentation', 'custom_hints_tips');
-}
-
-function custom_hints_tips()
-{
-    echo '
-<h2>Wordpress Guide and Info</h2>
-<i>Click on the link below to access your guide.</i><br />
-
-    <ul>
-    <li><h3><a style="text-decoration:none;" href="#" target="_blank">Trice Medical Wordpress Guide</a></h3></li>
-    </ul>
-
-
-
-<!-- <h2>Recommended Image Sizes</h2>
-
-<ul>
-<li><b>Event Images:</b> 760 x 500 pixels - 200kb size limit</li>
-<li><b>Press Page Thumbnails:</b> 500x 300 pixels</li>
-<li><b>Case Report Headshots:</b> 255 x 178 pixels</li>
-<li><b>Case Report Images:</b> 500 x 500 pixels </li>
-</ul> -->';
-}
 
 
 /*//////////////////////////////*/
@@ -680,21 +646,27 @@ $emoji_svg_url = apply_filters('emoji_svg_url', 'https://s.w.org/images/core/emo
 }
 
 // Remove Wordpress SideNav Items
-
 function remove_menus(){
+
+  if ( is_user_logged_in() ) {
+    $current_user = wp_get_current_user();
+    if (!in_array($current_user->ID, array(1,3))) {
   
-  remove_menu_page( 'edit.php' );                  //Posts
-  remove_menu_page( 'index.php' );                  //Dashboard
-//   remove_menu_page( 'jetpack' );                    //Jetpack* 
-  remove_menu_page( 'edit-comments.php' );          //Comments
-  remove_menu_page( 'themes.php' );                 //Appearance
-  remove_menu_page( 'plugins.php' );                //Plugins
-//   // remove_menu_page( 'users.php' );                  //Users
-  remove_menu_page( 'tools.php' );                  //Tools
-//   remove_menu_page( 'options-general.php' );        //Settings
-  remove_menu_page('edit.php?post_type=acf-field-group');      //ACF
+      remove_menu_page( 'edit.php' );                  //Posts
+      remove_menu_page( 'index.php' );                  //Dashboard
+    //   remove_menu_page( 'jetpack' );                    //Jetpack* 
+      remove_menu_page( 'edit-comments.php' );          //Comments
+      remove_menu_page( 'themes.php' );                 //Appearance
+      remove_menu_page( 'plugins.php' );                //Plugins
+    //   // remove_menu_page( 'users.php' );                  //Users
+      remove_menu_page( 'tools.php' );                  //Tools
+    //   remove_menu_page( 'options-general.php' );        //Settings
+      remove_menu_page('edit.php?post_type=acf-field-group');      //ACF
+    } 
+  }
 }
 add_action( 'admin_menu', 'remove_menus', 9999);
+
 
 
 /*	DISABLE XMLRPC 	*/
