@@ -909,12 +909,13 @@ li.active-menu {
       align-content: center;
   padding-top: 55px; }
 
-.single-employee-container h3 {
-  margin: 10px 0 8px 0; }
-
-.single-employee-container h4 {
-  color: #6CC069;
-  margin-bottom: 16px; }
+.single-employee-container {
+  margin-bottom: 80px; }
+  .single-employee-container h3 {
+    margin: 10px 0 8px 0; }
+  .single-employee-container h4 {
+    color: #6CC069;
+    margin-bottom: 16px; }
 
 .employee-image-container {
   position: relative;

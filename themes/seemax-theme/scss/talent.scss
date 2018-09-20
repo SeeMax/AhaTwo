@@ -12,14 +12,14 @@
 		padding-top:100px;
 	}
 }
-		
+
 .talent-intro {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 
 	h2 {
-		padding-right:15px; 
+		padding-right:15px;
 	}
 
 	hr {
@@ -35,7 +35,7 @@
 
 	.talent-body-copy {
 		position: relative;
-		padding-left:15px; 
+		padding-left:15px;
 
 		span {
 			display: block;
@@ -54,7 +54,8 @@
 }
 
 .single-employee-container {
-	
+	margin-bottom:80px;
+
 
 	h3 {
 		margin:10px 0 8px 0;
@@ -63,7 +64,7 @@
 	h4 {
 		color:$green;
 		margin-bottom:16px;
-	}	
+	}
 }
 
 .employee-name {
@@ -84,7 +85,7 @@
 	top:8px;
 	width:150px;
 	height:150px;
-	border-radius: 50%;	
+	border-radius: 50%;
 }
 
 .background-image  {
@@ -113,7 +114,7 @@
 	}
 
 	h2 {
-		
+
 	}
 
 	.background-circle {
@@ -130,7 +131,7 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
-	
+
 	.single-advisor {
 		width:50%;
 		height:auto;
@@ -154,7 +155,7 @@
 		top:5px;
 		width:88px;
 		height:88px;
-		border-radius: 50%;	
+		border-radius: 50%;
 	}
 
 	.advisor-words {
@@ -166,7 +167,7 @@
 		flex-wrap:wrap;
 		align-content: center;
 	}
-	
+
 	.advisor-title {
 		margin-top:5px;
 		color:$green;
@@ -196,7 +197,7 @@
 			padding-bottom:0px;
 		}
 	}
-	
+
 
 	.talent-intro {
 		padding-bottom: 30px;
